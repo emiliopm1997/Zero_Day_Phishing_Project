@@ -172,3 +172,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+data/train_data_enc_cls.csv
+data/train_data_enc_mp.csv
