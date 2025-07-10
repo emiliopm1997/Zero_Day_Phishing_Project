@@ -1,1 +1,86 @@
-{"baseline_model": {"model_type": "PCA", "hyperparameters": {"n_components": 384, "re_quantile": 0.95}, "re_threshold": 1.7862895946052635, "encoding_method": "[CLS] token", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/baseline_model.joblib"}, "pca_cls": {"model_type": "PCA", "hyperparameters": {"n_components": 675, "re_quantile": 0.9}, "re_threshold": 0.5298587887307267, "encoding_method": "[CLS] token", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/pca_cls.joblib"}, "pca_mean_pooling": {"model_type": "PCA", "hyperparameters": {"n_components": 700, "re_quantile": 0.9}, "re_threshold": 0.3233325824876495, "encoding_method": "Mean pooling", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/pca_mean_pooling.joblib"}, "ocsvm_cls": {"model_type": "OC-SVM", "hyperparameters": {"kernel": "poly", "nu": 0.15, "gamma": "scale", "re_quantile": 0.9}, "re_threshold": 70.03218190957375, "encoding_method": "[CLS] token", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/ocsvm_cls.joblib"}, "ocsvm_mp": {"model_type": "OC-SVM", "hyperparameters": {"kernel": "poly", "nu": 0.3, "gamma": "scale", "re_quantile": 0.9}, "re_threshold": 70.41146809135779, "encoding_method": "Mean pooling", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/ocsvm_mp.joblib"}, "vae_cls": {"model_type": "Variational Autoencoder", "hyperparameters": {"re_quantile": 0.9, "latent_dim": 16, "hidden_dim": 384, "kl_weight": 0.1, "epochs": 50, "batch_size": 64, "lr": 0.001}, "re_threshold": 4.68976092338562, "encoding_method": "[CLS] token", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/vae_cls.joblib"}, "vae_mp": {"model_type": "Variational Autoencoder", "hyperparameters": {"re_quantile": 0.9, "latent_dim": 16, "hidden_dim": 384, "kl_weight": 0.1, "epochs": 50, "batch_size": 32, "lr": 0.001}, "re_threshold": 4.755747079849243, "encoding_method": "Mean pooling", "file_path": "/workspaces/Zero_Day_Phishing_Project/models/vae_mp.joblib"}}
+{
+    "baseline_model": {
+        "model_type": "PCA",
+        "hyperparameters": {
+            "n_components": 384,
+            "re_quantile": 0.95
+        },
+        "re_threshold": 1.7862895946052635,
+        "encoding_method": "[CLS] token",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/baseline_model.joblib"
+    },
+    "pca_cls": {
+        "model_type": "PCA",
+        "hyperparameters": {
+            "n_components": 700,
+            "re_quantile": 0.8
+        },
+        "re_threshold": 0.389765397954226,
+        "encoding_method": "[CLS] token",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/pca_cls.joblib"
+    },
+    "pca_mean_pooling": {
+        "model_type": "PCA",
+        "hyperparameters": {
+            "n_components": 750,
+            "re_quantile": 0.8
+        },
+        "re_threshold": 0.12784451799116675,
+        "encoding_method": "Mean pooling",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/pca_mean_pooling.joblib"
+    },
+    "ocsvm_cls": {
+        "model_type": "OC-SVM",
+        "hyperparameters": {
+            "kernel": "poly",
+            "nu": 0.3,
+            "gamma": "scale",
+            "re_quantile": 0.8
+        },
+        "re_threshold": 110.23851216811909,
+        "encoding_method": "[CLS] token",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/ocsvm_cls.joblib"
+    },
+    "ocsvm_mp": {
+        "model_type": "OC-SVM",
+        "hyperparameters": {
+            "kernel": "poly",
+            "nu": 0.5,
+            "gamma": "scale",
+            "re_quantile": 0.8
+        },
+        "re_threshold": 164.158978067534,
+        "encoding_method": "Mean pooling",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/ocsvm_mp.joblib"
+    },
+    "vae_cls": {
+        "model_type": "Variational Autoencoder",
+        "hyperparameters": {
+            "re_quantile": 0.8,
+            "latent_dim": 16,
+            "hidden_dim": 384,
+            "kl_weight": 0.1,
+            "epochs": 50,
+            "batch_size": 32,
+            "lr": 0.001
+        },
+        "re_threshold": 4.285709381103516,
+        "encoding_method": "[CLS] token",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/vae_cls.joblib"
+    },
+    "vae_mp": {
+        "model_type": "Variational Autoencoder",
+        "hyperparameters": {
+            "re_quantile": 0.9,
+            "latent_dim": 16,
+            "hidden_dim": 384,
+            "kl_weight": 0.1,
+            "epochs": 50,
+            "batch_size": 32,
+            "lr": 0.001
+        },
+        "re_threshold": 4.755747079849243,
+        "encoding_method": "Mean pooling",
+        "file_path": "/workspaces/Zero_Day_Phishing_Project/models/vae_mp.joblib"
+    }
+}
