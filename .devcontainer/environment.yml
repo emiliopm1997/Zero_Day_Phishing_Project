@@ -1,0 +1,23 @@
+name: py_env
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - flake8
+  - autopep8
+  - numpy
+  - ipykernel
+  - openpyxl
+  - pip
+  - black
+  - isort
+  - pandas
+  - scipy
+  - transformers
+  - seaborn
+  - scikit-learn
+  - pygments
+  - matplotlib
+  - statsmodels
+  - python=3.8
+prefix: /opt/conda/envs/py_env

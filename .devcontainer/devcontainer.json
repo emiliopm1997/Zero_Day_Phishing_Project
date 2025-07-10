@@ -1,0 +1,47 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/docker-existing-dockerfile
+{
+	"name": "Python Container",
+	"dockerFile": "Dockerfile",
+	// Use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"autoDocstring.docstringFormat":"numpy",
+				"autoDocstring.generateDocstringOnEnter": true,
+				"cSpell.enableFiletypes": [
+					"!python"
+				],
+				"files.autoSave": "afterDelay",
+				"git.autorefresh": true,
+				"editor.formatOnSave": true,
+				"editor.rulers": [
+					80
+				],
+				"python.defaultInterpreterPath": "/opt/conda/envs/py_env/bin/python",
+				"python.formatting.autopep8Path": "/opt/conda/envs/py_env/bin/autopep8",
+				"python.formatting.blackPath": "/opt/conda/envs/py_env/bin/black",
+				"python.linting.flake8Path": "/opt/conda/envs/py_env/bin/flake8",
+				"python.linting.flake8Enabled": true,
+				"python.sortImports.path": "/opt/conda/envs/py_env/bin/isort"
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"redhat.vscode-yaml",
+				"njpwerner.autodocstring",
+				"aaron-bond.better-comments",
+				"ms-vscode.makefile-tools",
+				"tal7aouy.icons",
+				"ms-toolsai.jupyter",
+				"donjayamanne.python-extension-pack"
+			]
+		}
+	},
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	]
+}
