@@ -9,7 +9,7 @@ from typing import Tuple
 from .abstract import AbstractModel
 
 
-class VAEReconstructionModel(AbstractModel):
+class VAEReconstruction(AbstractModel):
     """Reconstruction class for Variational Autoencoder."""
 
     name = "Variational Autoencoder"

@@ -16,10 +16,9 @@ The goal is to contribute to proactive cybersecurity by catching novel phishing 
 
 ## 📦 Features
 
-- Preprocessing tools for structured and unstructured email data
-- NLP pipelines using libraries like SpaCy and NLTK
-- Transformer-based feature extraction (BERT)
-- Reconstruction models (PCA, autoencoders) for anomaly detection
+- Preprocessing tools for email data.
+- Transformer-based encoding (BERT).
+- Reconstruction models (PCA, One Class-SVM, Variational Autoencoder) for anomaly detection
 - Model training, evaluation, and zero-day simulation workflows
 
 ---
